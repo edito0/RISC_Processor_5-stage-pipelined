@@ -134,7 +134,7 @@ ADD  R5,R4,R3
 HLT
 ```
 
-# Instructions
+## Instructions
 
 | Assembly Instruction | Machine Code                                | Hexcode   |
 |-----------------------|---------------------------------------------|-----------|
