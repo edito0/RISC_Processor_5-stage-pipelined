@@ -66,6 +66,13 @@ MIPS32 instructions are categorized into three formats:
 
 ![Instruction Encoding](Images/instruction_encoding.png)
 
+- shamt (shift amount): Used to specify the number of bit positions to shift.
+- funct (function field): Extends the opcode to define additional operations.
+- Some instructions require two register operands (rs and rt), while others need only one operand (rs).
+- This distinction becomes clear only after the instruction is decoded.
+- During decoding, the processor can prefetch register values in parallel — these may or may not be used depending on the instruction.
+- Likewise, 16-bit and 26-bit immediate values are fetched and sign-extended to 32 bits in advance, so they are available if required later.
+
 ---
 
 ## 🛠 Pipeline Stages  
@@ -117,7 +124,7 @@ Each instruction flows through five stages:
 
 ## 📘 Sample Programs  
 
-### Example 1: Add 10 + 20 + 25  
+### Example : Add 10 + 20 + 25  
 ```asm
 ADDI R1,R0,10  
 ADDI R2,R0,20  
@@ -130,31 +137,6 @@ HLT
 **Expected Output:**  
 ```
 R1 = 10, R2 = 20, R3 = 25, R4 = 30, R5 = 55
-```  
-
----
-
-### Example 2: Memory Operation  
-- Load word from Mem[120]  
-- Add 45  
-- Store result in Mem[121]  
-
-**Expected Output:**  
-```
-Mem[120] = 85  
-Mem[121] = 130  
-```  
-
----
-
-### Example 3: Factorial of N  
-- Input N at Mem[200]  
-- Result stored at Mem[198]  
-
-**Expected Output (N=7):**  
-```
-Mem[200] = 7  
-Mem[198] = 5040  
 ```  
 
 ---
