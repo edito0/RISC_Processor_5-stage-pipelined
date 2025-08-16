@@ -101,6 +101,8 @@ Each instruction flows through five stages:
 - `mips32_pipelined_design.vvp` → Compiled simulation file  
 - `mips.vcd` → Waveform dump (for GTKWave or other viewers)  
 
+🔗 **Run Online (EDA Playground):** [Click Here](https://edaplayground.com/x/vVz7)
+
 ---
 
 ## ▶ Running the Simulation  
