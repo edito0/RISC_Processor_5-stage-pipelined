@@ -1,5 +1,5 @@
 $date
-	Sat Aug 16 13:47:44 2025
+	Sat Aug 16 14:36:44 2025
 $end
 $version
 	Icarus Verilog
@@ -7,7 +7,7 @@ $end
 $timescale
 	1ps
 $end
-$scope module test_mips32 $end
+$scope module mips32_tb $end
 $var reg 1 ! clk1 $end
 $var reg 1 " clk2 $end
 $var integer 32 # k [31:0] $end
