@@ -83,7 +83,7 @@ Each instruction flows through five stages:
 ## 🔄 Datapath Design  
 
 - **Pipelined datapath**
-![Datapath Design Architecture](Image/architecture.png)  
+![Datapath Design Architecture](Images/architecture.png)  
 
 ---
 
