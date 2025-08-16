@@ -6,21 +6,6 @@ The pipeline implementation follows the classic **IF–ID–EX–MEM–WB** stru
 
 ---
 
-## 📑 Table of Contents  
-- [Overview](#-overview)  
-- [Instruction Set](#-instruction-set)  
-- [Instruction Encoding](#-instruction-encoding)  
-- [Pipeline Stages](#-pipeline-stages)  
-- [Datapath Design](#-datapath-design)  
-- [Verilog Source Files](#-verilog-source-files)  
-- [Running the Simulation](#-running-the-simulation)  
-- [Sample Programs](#-sample-programs)  
-- [Results](#-results)  
-- [Known Limitations](#-known-limitations)  
-- [References](#-references)  
-
----
-
 ## 📖 Overview  
 - **Architecture**: MIPS32 RISC  
 - **Pipeline Depth**: 5 stages  
@@ -79,7 +64,7 @@ MIPS32 instructions are categorized into three formats:
 - **I-type:** Immediate operations, Load/Store, Branches  
 - **J-type:** Unconditional jumps  
 
-![Dummy image for instruction encoding – replace with real one](images/instr_encoding.png)  
+![Instruction Encoding](Images/instruction_encoding.png)
 
 ---
 
@@ -93,17 +78,12 @@ Each instruction flows through five stages:
 4. **MEM (Memory Access):** Load/Store operations and branch resolution  
 5. **WB (Write Back):** Write result into register file  
 
-![Dummy pipeline stages diagram](images/pipeline_stages.png)  
-
 ---
 
 ## 🔄 Datapath Design  
 
-- **Non-pipelined datapath** (reference)  
-  ![Dummy non-pipelined datapath image](images/datapath_nonpipelined.png)  
-
 - **Pipelined datapath** (final design)  
-  ![Dummy pipelined datapath image](images/datapath_pipelined.png)  
+  ![Datapath Design Architecture](Images/architecture.png)  
 
 ---
 
@@ -192,7 +172,7 @@ R5 - 55
 ```  
 
 - **Waveform (GTKWave):**  
-  ![Dummy waveform image](images/waveform.png)  
+  ![Waveform Result](Images/waveform_result.png)  
 
 ---
 
@@ -203,9 +183,3 @@ R5 - 55
 - Control hazards in branch handling  
 - No hazard mitigation logic → dummy instructions must be inserted in programs  
 
----
-
-## 📚 References  
-
-- *Prof. Indranil Sengupta, IIT Kharagpur – Hardware Modeling Using Verilog*  
-- MIPS32 ISA documentation  
