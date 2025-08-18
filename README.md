@@ -1,4 +1,4 @@
-# 🚀 5-Stage Pipelined MIPS32 Processor
+# 5-Stage Pipelined MIPS32 Processor
 
 This project presents a complete **behavioral Verilog model** of a MIPS32 processor implemented with a **5-stage instruction pipeline**. The design covers a subset of the MIPS32 instruction set, supports memory operations, arithmetic/logic operations, branching, and halting.  
 
